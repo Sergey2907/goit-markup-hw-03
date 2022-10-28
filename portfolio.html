@@ -5,32 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap,sans-serif"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav class="site-nav">
-        <a href="./index.html" class="logo link"> <span>Web</span>Studio</a>
-        <ul class="nav-list list">
-          <li class="nav-item"><a href="./index.html" class="nav-link list link">Студія</a></li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
+      <div class="container header-container">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo link"> <span>Web</span>Studio</a>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link link current">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="site-contacts list">
+          <li class="contacts-item">
+            <a href="mailtu:info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link link">Контакти</a></li>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="site-contacts list">
-        <li class="contacts-item">
-          <a href="mailtu:info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
-        </li>
-        <li class="contacts-item">
-          <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="filter">
@@ -45,66 +54,84 @@
 
         <ul class="work-list list">
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/технокряк.jpg" width="370" alt="Веб-сайт" />
-              <h2>Технокряк</h2>
-              <p>Веб-сайт</p>
+              <div class="work-text">
+                <h2>Технокряк</h2>
+                <p>Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/постер.jpg" width="370" alt="Дизайн" />
-              <h2>Постер New Orlean vs Golden Star</h2>
-              <p>Дизайн</p>
+              <div class="work-text">
+                <h2>Постер New Orlean vs Golden Star</h2>
+                <p>Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/ресторан.jpg" width="370" alt="Додаток" />
-              <h2>Ресторан Seafood</h2>
-              <p>Додаток</p>
+              <div class="work-text">
+                <h2>Ресторан Seafood</h2>
+                <p>Додаток</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/проєкт-prime.jpg" width="370" alt="Маркетинг" />
-              <h2>Проєкт Prime</h2>
-              <p>Маркетинг</p>
+              <div class="work-text">
+                <h2>Проєкт Prime</h2>
+                <p>Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/проєкт-boxes.jpg" width="370" alt="Додаток" />
-              <h2>Проєкт Boxes</h2>
-              <p>Додаток</p>
+              <div class="work-text">
+                <h2>Проєкт Boxes</h2>
+                <p>Додаток</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/inspiration.jpg" width="370" alt="Веб-сайт" />
-              <h2>Inspiration has no Borders</h2>
-              <p>Веб-сайт</p>
+              <div class="work-text">
+                <h2>Inspiration has no Borders</h2>
+                <p>Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/видання.jpg" width="370" alt="Дизайн" />
-              <h2>Видання Limited Edition</h2>
-              <p>Дизайн</p>
+              <div class="work-text">
+                <h2>Видання Limited Edition</h2>
+                <p>Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/проєкт-lab.jpg" width="370" alt="Маркетинг" />
-              <h2>Проєкт LAB</h2>
-              <p>Маркетинг</p>
+              <div class="work-text">
+                <h2>Проєкт LAB</h2>
+                <p>Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="work-item">
-            <a href="#" class="link"
+            <a href="#" class="work-link link"
               ><img src="./images/portfolio/growing.jpg" width="370" alt="Додаток" />
-              <h2>Growing Business</h2>
-              <p>Додаток</p>
+              <div class="work-text">
+                <h2>Growing Business</h2>
+                <p>Додаток</p>
+              </div>
             </a>
           </li>
         </ul>

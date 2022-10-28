@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
 :root {
   /* color */
   --primary-color: rgb(33, 33, 33);
@@ -17,69 +27,150 @@ body {
 }
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
 
+.centered {
+  text-align: center;
+}
+
 /* header */
+.header-container {
+  display: flex;
+
+  border-bottom: 1px solid #ececec;
+}
+
 /* Логотип */
 .logo {
+  display: flex;
+  align-items: center;
+
   font-family: 'Raleway';
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
   color: #000000;
 }
+
 .logo span {
   color: var(--accent-color);
 }
 /* навигация */
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .nav-item {
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-color);
 }
+
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-contacts .contacts-item + .contacts-item {
+  margin-left: 50px;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
 .nav-link:hover,
 :focus {
   color: var(--accent-color);
 }
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* контакты */
 .contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-color);
 }
+
 .contacts-link:hover,
 :focus {
   color: var(--accent-color);
 }
+
 /* hiro */
 .hiro {
   background-color: #2f303a;
+
+  padding: 200px 452px;
 }
+
 /* заголовок */
 .hiro-titel {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   color: #ffffff;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
+
 .hiro-button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+
   background-color: var(--accent-color);
   color: #ffffff;
+
+  border: 1px solid transparent;
+
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
+
 /* benefits */
 /* скрытый заголовок */
 .visually-hidden {
@@ -94,56 +185,173 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 /* список преимуществ */
+.benefits {
+  padding: 94px 215px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.benefits-item:nth-child(4n) {
+  margin-right: 0;
+}
+
 .benefits-item h3 {
   font-size: 14px;
   line-height: 1.14;
+
+  margin-bottom: 10px;
 }
+
 .benefits-item p {
   font-size: 14px;
   line-height: 1.71;
 }
+
 /* projects */
+.projects {
+  padding: 0px 215px 94px 215px;
+}
+
 .projects-titel,
 .team-titel {
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
+
+  margin-bottom: 50px;
 }
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+
+.projects-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* .work-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0;
+}
+.work-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
 
 /* team */
 .team {
   background-color: #f5f4fa;
+
+  padding: 94px 215px;
 }
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.team-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.team-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .team-list h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  color: var(--primary-color);
+
+  margin-bottom: 10px;
 }
+
 .team-list p {
   line-height: 1.18;
   color: var(--secondary-color);
 }
+
+.team-text {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* footer */
 .footer {
   background-color: #2f303a;
 }
+
 .footer .logo {
   color: #ffffff;
   line-height: 1.19;
 }
+
 .address-link:hover {
   color: #ffffff;
 }
+
 .address-link:focus {
   color: #ffffff;
 }
+
 .address-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-/* portfolio */
+
+/* Портфоліо */
 /* section filter */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
+/* filter-item */
+
+/* кнопки фільтру */
+.filter-list .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-btn {
+  border-radius: 4px;
+  padding: 6px 25px;
+  min-width: 73px;
+
+  border: 1px solid transparent;
+}
+
 .filter-btn {
   cursor: pointer;
   background-color: #f5f4fa;
@@ -152,18 +360,71 @@ body {
   line-height: 1.62;
   color: rgba(33, 33, 33, 1);
 }
+
 .filter-btn:hover {
   background-color: var(--accent-color);
   color: #ffffff;
 }
+
 /* наші роботи */
+/* work-list */
+
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+/* work-item */
+
+.work-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0;
+}
+.work-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .work-item h2 {
   font-size: 18px;
   line-height: 2;
   color: var(--primary-color);
   letter-spacing: 0.06em;
 }
+
 .work-item p {
   line-height: 1.87;
   color: #757575;
+}
+
+/* work-link */
+
+.work-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* work-text */
+
+.work-text {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.work-text h2 {
+  margin-bottom: 4px;
 }
