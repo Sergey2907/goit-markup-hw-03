@@ -53,6 +53,7 @@ body {
 
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 .header-container {
@@ -199,9 +200,6 @@ body {
 
 /* список преимуществ */
 .benefits {
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -209,8 +207,6 @@ body {
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .benefits-item {
@@ -251,8 +247,6 @@ body {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .projects-item {
@@ -269,13 +263,12 @@ body {
   background-color: #f5f4fa;
 
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .team-item {
@@ -317,8 +310,6 @@ body {
 
 /* footer */
 .footer {
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 60px;
   padding-top: 60px;
 
@@ -329,13 +320,9 @@ body {
   color: #ffffff;
   line-height: 1.19;
   margin-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .address-list {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .address-link:hover {
@@ -369,8 +356,7 @@ body {
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-bottom: 50px;
 }
 
 /* filter-item */
@@ -409,10 +395,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  padding-top: 50px;
 }
 
 /* work-item */
@@ -445,6 +427,8 @@ body {
 /* work-link */
 
 .work-link img {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
